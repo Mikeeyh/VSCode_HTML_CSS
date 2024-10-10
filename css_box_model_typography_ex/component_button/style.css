@@ -1,0 +1,39 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+h2 {
+    font-size: 1.2em;
+}
+
+.button {
+    background: rgb(204, 204, 204);
+    border-radius: 2px;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 10px;
+    text-align: center;
+    margin: 10px 5px;
+    display: inline-block;
+    font-size: 0.7rem;
+}
+
+.button:first-of-type {
+    margin-left: 0;
+}
+
+.primary {
+    background: orange;
+}
+
+.secondary {
+    background: rgb(255, 255, 144);
+}
+
+.outline {
+    background: white;
+}
+
+/* Ensure the buttons are clickable */
+button {
+    cursor: pointer; /* Make it look clickable */
+}

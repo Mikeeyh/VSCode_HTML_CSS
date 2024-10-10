@@ -1,0 +1,38 @@
+/* descendant selector - section p is a descendant selector. It targets only <p> elements that are inside a <section>. These paragraphs will be styled with blue text and bold font. */
+section p {
+    color: rgb(100, 100, 100);
+    /* font-weight: bold; */
+}
+
+/* Styling ul list items: */
+ul li {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+
+/* child selector(>) - Style for the second <li> element within the <ul> with class "special-list" */
+ul > li:nth-child(2) {
+    color: red;
+}
+
+/* adjacent sibling selector(+) - Style for <article> that immediately follows another <article> */
+article + article:last-of-type  {
+    background-color: rgb(255, 142, 147);
+}
+
+/* general sibling selector(~) - Style <p> elements that follow the <h2> with class "highlighted-title" */
+h2.highlighted-title ~ p {
+    color: rgb(47, 51, 255);
+}
+
+/* Style the first <a> element inside the nested <ul> of the last <li> */
+li > ul > li:nth-of-type(1), li:nth-of-type(2) a {
+    color: blue;
+}
+
+/* Style the third <a> element inside the nested <ul> of the last <li> */
+li > ul > li:last-of-type a {
+    color: green;
+}

@@ -1,0 +1,84 @@
+/* Base styles */
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+}
+
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+}
+
+/* Paragraphs, ordered and unordered lists */
+p, ol, ul {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+
+}
+
+/* Ensure padding-left for ordered and unordered lists */
+ol, ul {
+    padding-left: 1.5rem;
+}
+
+header {
+    line-height: 1.2;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: Georgia;
+}
+
+ul {
+    list-style-type: square; /* 1st ul: black square */
+}
+
+ul ul {
+    list-style-type: disc; /* 2nd ul: black circle */
+}
+
+ul ul ul {
+    list-style-type: circle; /* 3rd ul: empty circle */
+    
+}
+
+blockquote {
+    border-left: 4px solid #ccc; /* Add a left border */
+    padding-left: 2em;           /* Space between the border and text */
+    padding-top: 1em;
+    margin: 2em;            /* Margin for spacing */
+}
+
+.blockquote-name {
+    text-align: right;           /* Align 'Koko' to the right */
+    margin-top: 1em;            /* Optional: space above the name */
+}
+
+
+table {
+    width: 100%;                   /* Full width of the parent */
+    border-collapse: collapse;     /* Collapse borders */
+}
+
+th, td {
+    border: 1px solid #ccc;        /* Border for all cells */
+    padding: 8px;                  /* Padding for cells */
+    text-align: left;              /* Align text to the left */
+}
+
+thead {
+    background-color: gray;    /* Background color for the header */
+}
+
+thead th {
+    color: rgb(0, 0, 0);                  /* Text color for header */
+    font-weight: bold;             /* Bold text for header */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e6e6e6;      /* Light gray for odd rows (excluding header) */
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(252, 252, 252);         /* Dark gray for even rows (excluding header) */
+}

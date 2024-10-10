@@ -1,0 +1,148 @@
+.css-box-model {
+    width: 50vw;
+    margin: 50px auto; /* 50px means top&bot auto means auto for left&rigth (center) */
+}
+
+.css-box-model div {
+    border: 1px dashed gray;
+    margin: 10px 20px 20px 20px;
+}
+
+.css-box-model div:before {
+    padding-left: 15px;
+    font-size: 12px;
+    display: block;  /* we add display: block so they can accept 'hight' */
+}
+
+.css-box-model .margin {
+    background-color: rgb(255, 158, 129);
+}
+
+/* Adding pseudo element 'before' to add content (text) */
+.css-box-model .margin:before{
+    background-color: rgb(255, 158, 129);
+    content: 'margin';
+}
+
+.css-box-model .border {
+    background-color: rgb(253, 218, 171);
+}
+
+.css-box-model .border:before{
+    background-color: rgb(253, 218, 171);
+    content: 'border';
+}
+
+.css-box-model .padding {
+    background-color: rgb(141, 255, 141);
+}
+
+.css-box-model .padding:before{
+    background-color: rgb(141, 255, 141);
+    content: 'padding';
+}
+
+.css-box-model .content {
+    background-color: rgb(128, 198, 255);
+    text-align: center;
+    text-transform: capitalize;  /* Making every 1st letter Capitalize in each new word */
+}
+
+
+/* WITHOUT PSEUDO ELEMENTS -> USING RELATIVE/ABSOLUTE POSITION */
+
+.css-box-model {
+    width: 50vw;
+    margin: 50px auto; /* 50px means top&bot auto means auto for left&rigth (center) */
+}
+
+.css-box-model div {
+    border: 1px dashed gray;
+    margin: 20px;
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    margin: 0px;
+    font-size: 10px;
+}
+
+.css-box-model .margin {
+    background-color: rgb(255, 158, 129);
+}
+
+
+.css-box-model .border {
+    background-color: rgb(253, 218, 171);
+}
+
+
+.css-box-model .padding {
+    background-color: rgb(141, 255, 141);
+}
+
+
+.css-box-model .content {
+    background-color: rgb(128, 198, 255);
+    text-align: center;
+    text-transform: capitalize;  /* Making every 1st letter Capitalize in each new word */
+}
+
+/* html, body {
+    margin: 2em; 
+    position: relative;
+}
+
+.label-margin {
+    position: absolute;
+    top: 4px;
+    left: 0.5em;
+}
+
+.label-border {
+    position: absolute;
+    top: 30px;
+    left: 2em;
+}
+
+.label-padding {
+    position: absolute;
+    top: 55px;
+    left: 3.7em;
+} */
+
+/* Outer box represents margin */
+/* .margin-box {
+    position: inherit;
+    background-color: rgb(252, 157, 122);
+    padding: 25px;
+    border: 0.5px dashed rgb(0, 0, 0);
+} */
+
+/* Middle box represents border */
+/* .border-box {
+    position: inherit;
+    background-color: rgb(252, 225, 170);
+    padding: 25px;
+    border: 0.5px dashed rgb(0, 0, 0);
+} */
+
+/* Inner box represents padding */
+/* .padding-box {
+    position: inherit;
+    background-color: rgb(84, 211, 122);
+    padding: 25px;
+    border: 0.5px dashed rgb(0, 0, 0);
+} */
+
+/* Content box represents the actual content */
+/* .content-box {
+    position: inherit;
+    background-color: rgb(135, 225, 255);
+    padding: 25px;
+    border: 0.5px dashed rgb(0, 0, 0);
+    text-align: center;
+} */

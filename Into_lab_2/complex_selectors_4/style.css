@@ -1,0 +1,53 @@
+/* Descendant Selector */
+nav a {
+    color: rgb(0, 4, 250); /* Default link color */
+}
+
+/* Pseudo-class Selector */
+nav ul li:first-child a {
+    font-weight: bold;
+}
+
+nav ul li:last-child a {
+    font-style: italic;
+}
+
+/* Child Combinator */
+.service-container > .service {
+    background-color: lightblue;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+/* Adjacent Sibling Combinator */
+header + article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Pseudo-element Selector */
+header::before {
+    content: ">> ";
+    font-weight: bold; /* Make the >> text bold */
+    color: rgb(150, 0, 0); /* Set the color of >> to red */
+    font-size: 1.2em; /* Optional: Increase the font size if needed */
+}
+
+header::after {
+    content: " <<";
+    font-weight: bold; /* Make the << text bold */
+    color: rgb(150, 0, 0); /* Set the color of << to red */
+    font-size: 1.2em; /* Optional: Increase the font size if needed */
+}
+
+/* Make the header text bold */
+header {
+    font-weight: bold;
+}
+
+/* Footer Image Styling */
+footer ul li img {
+    border: 7px solid rgb(255, 0, 0);
+    width: 180px; /* Example width */
+    height: 250px;
+}

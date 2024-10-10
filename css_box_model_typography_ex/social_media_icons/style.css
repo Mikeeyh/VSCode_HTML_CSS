@@ -1,0 +1,24 @@
+.container .buttons {
+    display: block;
+}
+
+div .buttons {
+    padding-left: 10px;
+}
+
+button {
+    border-radius: 25px;
+    border: 0;
+    padding: 15px;
+}
+
+p {
+    padding-left: 12px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+a {
+    color: inherit;  /* Inherits the color from the parent element */
+    text-decoration: none;  /* Removes the underline */
+}

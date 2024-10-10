@@ -1,0 +1,34 @@
+.flex-container {
+    width: 400px; 
+    height: 200px;
+    padding: 1em;
+    border: 2px solid blue; 
+    display: flex; 
+    align-items: flex-start; 
+}
+
+.flex-item {
+    background: #eee;
+    padding: 20px; 
+    border: 2px solid #000; 
+}
+
+/* Align the 2nd item to flex-start */
+.flex-start .flex-item:nth-child(2) {
+    align-self: flex-start;
+}
+
+/* Align the 2nd item to center */
+.center .flex-item:nth-child(2) {
+    align-self: center;
+}
+
+/* Align the 2nd item to flex-end */
+.flex-end .flex-item:nth-child(2) {
+    align-self: flex-end; 
+}
+
+/* Align the 2nd item to baseline */
+.baseline .flex-item:nth-child(2) {
+    align-self: baseline; 
+}

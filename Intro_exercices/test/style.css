@@ -1,0 +1,86 @@
+time {
+    font-style:italic;
+    color:gray;
+}
+
+span {
+    font-weight: bold;
+    color:gray;
+}
+
+.by-color {
+    color: gray;
+}
+
+/* Styling for the article container */
+article {
+    background-color: #ffe6c0; /* Light background for contrast */
+    border-radius: 18px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(240, 5, 64, 0.1); /* Subtle shadow */
+    padding: 20px; /* Internal padding */
+    margin-bottom: 20px; /* Spacing between articles */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+}
+
+/* Article hover effect */
+article:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(247, 12, 255, 0.2); /* Stronger shadow on hover */
+}
+
+/* Mobile responsiveness -NOT NECESSARY HERE- */
+@media (max-width: 600px) {
+    article {
+        padding: 15px;
+    }
+
+    article header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* Styling for nav ul and li */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 5px;
+    margin: 5px;
+    display: flex; /* Display items horizontally */
+    justify-content: center; /* Center the nav links */
+}
+
+nav li {
+    margin: 0 20px; /* Add horizontal space between each <li> */
+}
+
+nav a {
+    text-decoration: none;
+     font-size:larger;
+}
+
+nav a:hover {
+    color: #00ffcc; /* Neon green text */
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc; /* Neon glow */
+}
+
+
+/* Animated background with subtle movement */
+nav {
+    background: linear-gradient(120deg, #f2aafa, #fc0093);
+    background-size: 200% 200%;
+    animation: backgroundShift 4s ease infinite;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Adding backgrround image */
+body {
+    background-image: url('https://th.bing.com/th/id/OIP.xQYlImKdsbYbTUlCGm_NeQHaE7?rs=1&pid=ImgDetMain'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}

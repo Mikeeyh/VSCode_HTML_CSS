@@ -1,0 +1,77 @@
+/* Reset styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ol {
+    list-style: none;
+
+}
+
+/* ----------- */
+
+body {
+    background: #EEE;
+}
+
+.list-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.list-container ol {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.list-container li {
+    position: relative; /* This allows positioning the number box */
+    flex: 0 0 calc((100% / 2) - 10px);
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 24px;
+}
+
+/* Number box styling */
+.list-container li::after {
+    content: counter(item); /* Use a counter to auto-number the items */
+    counter-increment: item; /* Increment the counter for each li */
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(255, 174, 0);
+    width: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+}
+
+/* Initialize the counter */
+ol {
+    counter-reset: item;
+}
+
+@media (max-width: 800px) {
+    .list-container ol{
+        flex-direction: column;
+    }
+
+}

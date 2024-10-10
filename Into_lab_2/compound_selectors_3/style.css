@@ -1,0 +1,36 @@
+p.highlithed {
+    color: rgb(9, 46, 255);
+    font-size: large;
+}
+
+#special_background {
+    background-color: rgb(255, 174, 0);
+    padding: 1px;
+}
+
+input[type="text"].highlighted {
+    border-color: rgb(241, 0, 0);
+    padding: 10px;
+}
+
+
+/* Styling ul list items: */
+ul li:first-child {
+    color: rgb(54, 255, 238);
+}
+
+ul li:last-child {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+a.double_underline {
+    color: rgb(245, 174, 41);
+    text-decoration: double underline;
+}
+
+/* Target the last <p> with blue color */
+p:last-of-type {
+    color: blue;
+}

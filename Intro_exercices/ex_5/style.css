@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(255, 247, 205);
+}
+
+.author, .commenter {
+    font-weight: bold;
+}
+
+.post-comments, .post-header {
+    background: rgb(247, 235, 219);
+}
+
+
+/* Style the image to stay on the left */
+.picture {
+    max-width: 50%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style the outer div to use flexbox */
+div {
+    display: flex;
+    align-items: flex-start; /* Align content at the top */
+    justify-content: space-between; /* Ensure div and image stay on opposite sides */
+    gap: 20px; /* Add space between the text and image */
+}
+
+/* Ensure the inner div stays on the left */
+div > div {
+    max-width: 60%; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column; /* Stack header and paragraph vertically */
+    gap: 10px; /* Space between the header and paragraph */
+}
+
+/* div > div is given display: flex with flex-direction: column to stack the <header> 
+and <p> elements vertically inside the inner div. 
+This ensures that the header (<h2> and first <p>) is above the second paragraph. */

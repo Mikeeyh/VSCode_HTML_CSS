@@ -1,0 +1,41 @@
+/* Searching in class blog-post -> article -> header -> p (to apply a style on it) */
+.blog-posts article header p {
+    color:gray;
+}
+
+/* Appliying style to time */
+.blog-posts article header p time {
+    font-style: italic;
+}
+
+/* Appliying style to 'span' class author */
+span.author {
+    font-weight: bold;
+}
+
+/* Styling for the article container */
+article, section {
+    background-color: #ffe6c0; /* Light background for contrast */
+    border-radius: 18px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(240, 5, 64, 0.1); /* Subtle shadow */
+    padding: 20px; /* Internal padding */
+    margin-bottom: 20px; /* Spacing between articles */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+}
+
+/* Article hover effect */
+article:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(247, 12, 255, 0.2); /* Stronger shadow on hover */
+}
+
+/* Mobile responsiveness -NOT NECESSARY HERE- */
+@media (max-width: 600px) {
+    article {
+        padding: 15px;
+    }
+
+    article header h2 {
+        font-size: 1.5rem;
+    }
+}

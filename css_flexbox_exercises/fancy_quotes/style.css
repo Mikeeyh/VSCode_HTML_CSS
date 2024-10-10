@@ -1,0 +1,117 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%; /* max width of 100% of the container so it does not go out of the box */
+}
+/* ----------- */
+
+body {
+    background: #EEE;
+}
+
+.quoteContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+.quoteContainer article {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFF;
+    padding: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.leftArticle {
+    flex: 0 0 calc(80% - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.leftArticle i {
+    font-size: 40px;
+}
+
+p {
+    color: rgb(117, 117, 117);
+}
+
+.author {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.rightArticle {
+    flex-grow: 1; /* taking the remaining space */
+}
+
+.outerCircle {
+    background: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.innerCircle {
+    background: rgb(4, 131, 4);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.leftQuotes {
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    flex: 0 0 70%;
+}
+
+.rightQuotes {
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    flex: 0 0 calc(30% - 40px);
+}
+
+.rightQuotes article {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.rightQuotes .outerCircle {
+    background: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.rightQuotes .innerCircle {
+    background: rgb(4, 131, 4);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.quoteContainer .rightQuotes article {
+    align-items: flex-start;
+}

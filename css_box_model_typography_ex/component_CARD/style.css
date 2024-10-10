@@ -1,0 +1,107 @@
+/* background color */
+html, body {
+    background:rgb(244, 244, 244);
+    font-size: 15px;
+}
+
+a {
+    color: inherit;  /* Inherits the color from the parent element */
+    text-decoration: none;  /* Removes the underline */
+}
+
+/* Centering the main content */
+main {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    padding-top: 2em;
+    height: 100%; /* Ensure the container takes full height */
+}
+
+/* Card container */
+.card {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.card-content h3 {
+    margin-bottom: 0.5em;
+}
+
+#card-site {
+    font-weight: bold;
+    margin-top: 1.3em;
+}
+
+#card-link {
+    font-style: italic;
+    white-space: nowrap;      /* Prevents the text from wrapping to the next line */
+    overflow: hidden;         /* Ensures any overflow is hidden */
+    text-overflow: ellipsis;  /* Adding '...' if the text cannot fit */
+}
+
+
+
+/* OR */
+
+/* background color */
+html, body {
+    background:rgb(244, 244, 244);
+    font-size: 15px;
+}
+
+a {
+    color: inherit;  /* Inherits the color from the parent element */
+    text-decoration: none;  /* Removes the underline */
+}
+
+/* Card container */
+.card {
+    width: 30%;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    /* height: 100%;
+    object-fit: cover; */
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.card-content h3 {
+    margin-bottom: 0.5em;
+}
+
+#card-site {
+    font-weight: bold;
+    margin-top: 1.3em;
+}
+
+#card-link {
+    font-style: italic;
+    white-space: nowrap;      /* Prevents the text from wrapping to the next line */
+    overflow: hidden;         /* Ensures any overflow is hidden */
+    text-overflow: ellipsis;  /* Adding '...' if the text cannot fit */
+}

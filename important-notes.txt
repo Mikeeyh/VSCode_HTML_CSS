@@ -1,0 +1,83 @@
+FONTAWESOME:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+display: block;
+    Behavior: A block-level element always starts on a new line, taking up the full width available in its container (by default).
+
+display: inline;
+    Behavior: An inline element does not start on a new line. It only takes up as much width as its content requires and can exist alongside other elements on the same line.
+
+display: inline-block;
+    Behavior: An inline-block element behaves like an inline element (meaning it can exist next to other elements in the same line), but you can apply width, height, and vertical margins/padding like a block element.
+
+box-sizing: content-box; (Default Behavior)
+How it works:
+    The width and height you set apply only to the content of the element.
+    Padding, borders, and margins are added outside the content width/height
+    Total width: 200px (content) + 40px (padding) + 20px (border) = 260px.
+
+box-sizing: border-box;
+    How it works:
+    The width and height you set include the padding and border.
+    The content size shrinks to fit the padding and border inside the specified width
+    Content width: 200px (total width) - 40px (padding) - 20px (border) = 140px.
+
+flexbox:
+    How it works:
+    We have 'main axis' and 'cross axis'. The 'main axis' is the horisontal axis by default but we can change it to vertical.
+
+    flex-direction:
+        1. row (1---5--->N)
+        2. row-reverse (N<---5---1)
+        3. column & column reverse ( it is the same logic but in vertical way)
+
+    flex-wrap:
+        1. nowrap: overflow if needed, will not go to next line
+        2. wrap: will move to the next line if needed so it fits in the box
+        3. wrap-reverse: will just reverse the lines starting from the last one --> first one 
+
+justify-content:
+How it works:
+Defines how flexbox/grid items are aligned according to the main axis within a flexbox container
+
+    1. justify-content: flex-start;
+        The items are pushed towards the start of the main axis
+
+    2. justify-content: flex-end;
+        The items are pushed towards the end of the main axis
+
+    3. justify-content: center;
+        The items are centered along the container's main axis
+
+    4. justify-content: space-between;
+        The remaining space is distributed between the flexbox items
+
+    5. justify-content: space-around;
+        The remaining space is distributed around the flexbox items: 
+        this adds space before the first item and after the last one
+
+align-items:
+How it works:
+Defines how flexbox items are aligned according to the cross axis, within a line of a flexbox container
+
+    1. align-items: flex-start;
+        The flexbox items are aligned at the start of the cross axis. (The start is considered as the top border of the container)
+
+    2. align-items: flex-end;
+        The flexbox items are aligned at the end of the cross axis
+
+    3. align-items: center;
+        The flexbox items are aligned at the center of the cross axis
+
+    4. align-items: baseline;
+        The flexbox items are aligned at the baseline of the cross axis
+
+    5. align-items: stretch;
+        The flexbox items will stretch across the whole cross axis
+
+align-contents:
+How it works:
+It is the same as 'align-items' but for the whole content which may contain many items.
+
+

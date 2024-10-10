@@ -1,0 +1,39 @@
+/* Type selectors */
+h1 {
+    color: black;
+}
+
+p {
+    font-size: large;
+}
+
+/* Class selector for highlight */
+.highlight {
+    background-color: rgb(244, 62, 250);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ID selectors */
+#main-title {
+    color: darkblue; /* Unique color for the main title */
+}
+
+#special-paragraph {
+    font-style: italic; /* Unique style for this paragraph */
+}
+
+/* Styling for ul and li */
+ul {
+    list-style-type: square; /* Custom list style */
+    padding-left: 20px;
+}
+
+li {
+    color: rgb(242, 255, 57); /* Different color for list items */
+}
+
+/* Background for div */
+div.highlight {
+    background-color: rgb(255, 152, 152); /* Different background for div */
+}

@@ -1,0 +1,19 @@
+/* Apply bold and line-through for items in the "Done" section */
+div:nth-of-type(2) li {
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+/* This looks into the second 'div' element and add style to all of the 'li' in it */
+
+
+/* We can add a class to our 'ol' element so we can add style to it */
+.stroked {
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+/* Style a specific 'li' using 'id' */
+#specific_li {
+    color:crimson;
+}

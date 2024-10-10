@@ -1,0 +1,60 @@
+/* main {
+    border: 2px solid green;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100vw;
+    box-sizing: border-box; /* Ensures padding and borders are included in the width 
+} */
+
+/* section {
+    border: 2px;
+    border-style: solid;
+    border-color:rgb(0, 0, 0);
+    padding: 1em 3em 1em 3em;
+    margin: 1em;
+} */
+
+/* section p {
+    display: block;
+    border: 2px solid blue;
+    padding: 1.5em;
+    margin: 1em 3em 1em 3em;
+    text-align:left;
+    font-weight: bold;
+} */
+
+
+body {
+    border: 2px solid green;
+    margin: 0;
+    padding: 20px 0px;
+}
+
+.site-main {
+    border: 2px solid black;
+    padding: 20px;
+    max-width: 1300px;
+    height: 150px;
+    margin: auto;  /* center the element */
+}
+
+.site-main > header,
+.site-main > .content,
+.site-main > footer {
+    border: 2px solid blue;
+    font-weight: bold;
+    max-width: 700px;
+    padding-left: 20px;
+    margin: auto;  /* center the element */
+}
+
+.site-main{
+    margin-bottom: 20px;
+}
+
+.site-main h1 {
+    font-size: 1rem;
+}
+/* .site-main > header ---> means that we select the 'header' which is direct kid of 'site-main' class */

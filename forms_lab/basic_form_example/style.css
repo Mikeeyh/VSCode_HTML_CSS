@@ -1,0 +1,100 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* ----------- */
+
+body {
+    background-color: rgb(246, 234, 215);
+}
+
+form {
+    max-width: 450px;
+    margin: 30px auto;
+    border-radius: 7px;
+    background-color: rgb(255, 254, 253);
+    padding: 10px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+input:focus {
+    outline: 1px solid orange;
+}
+
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=email],
+input[type=phone],
+input[type=date] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 222, 155);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.required-label:after {
+    content: "*";
+    color: red;
+}
+
+input:required:valid {
+    border: 1px solid rgb(0, 168, 0);
+    background-color: rgb(247, 255, 247);
+}
+
+input[type=submit] {
+    width: auto; /* Adjust width to fit the content */
+    margin: 20px auto; /* Centers the button horizontally */
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 222, 155);
+
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add a hover effect */
+}
+
+/* Add hover effect for the button */
+input[type=submit]:hover {
+    background-color: rgb(245, 177, 94);
+    transform: scale(1.05); 
+}
+
+/* form:hover {
+    background-color: rgb(247, 224, 178);
+    transform: scale(1.05); 
+} */
+
+form fieldset {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+fieldset.column {
+    flex-direction: column;
+}
+
+fieldset.row {
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+form fieldset p {
+    flex: 0 0 100%;
+    text-align: center; 
+    margin: 5px 0;
+}

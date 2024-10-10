@@ -1,0 +1,30 @@
+/*  Apply unified font family and color to h1, h2, and p elements */
+h1, h2, p {
+    font-family: Arial, sans-serif; /* Example font family, adjust as needed */
+    color: rgb(56, 56, 56); /* Grey color for text */
+}
+
+/* Selector List for Layout Styles */
+/* Apply margin and padding styles to header, section, and footer elements */
+header, section, footer {
+    padding: 0px; /* Example padding, adjust as needed */
+}
+
+nav a {
+    color: rgb(56, 56, 56); /* Grey color for links */
+    text-decoration: none; /* Remove underline */
+    margin-right: 20px;
+}
+
+/* Change color on hover */
+nav a:hover {
+    color: rgb(3, 3, 3); /* Darker grey color on hover */
+}
+
+/* Combining Different Types of Selectors */
+/* Style section elements with class "General-Section" with a border */
+.General-Section {
+    border: 2px solid #ddd; /* Light grey border for the section */
+    padding: 10px; /* Padding inside the border */
+    margin: 10px;
+}

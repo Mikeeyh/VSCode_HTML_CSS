@@ -1,0 +1,30 @@
+body {
+    border: 2px solid green;
+    margin: 0;
+    padding: 20px 0px;
+}
+
+.site-main {
+    border: 2px solid blue;
+    padding: 20px;
+    max-width: 1500px;
+    margin: auto;  /* center the element */
+}
+
+.site-main > header,
+.site-main > main,
+.site-main > footer {
+    border: 2px solid #000000;
+    text-align:center;
+    font-weight: bold;
+}
+
+.site-main > header,
+.site-main > main {
+    margin-bottom: 20px;
+}
+
+.site-main h1 {
+    font-size: 1rem;
+}
+/* .site-main > header ---> means that we select the 'header' which is direct kid of 'site-main' class */

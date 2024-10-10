@@ -1,0 +1,11 @@
+/* 1. Remove all padding and margin from all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit; /* 2. Set box-sizing to inherit on all elements */
+}
+
+/* 3. Set box-sizing to border-box on the html element */
+html {
+    box-sizing: border-box;
+}
