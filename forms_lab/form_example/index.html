@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.6.0/css/all.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <i class="fa-brands fa-github"></i>
+        
+        <form action="https://github.com/search?" method="get" class="position-relative">
+
+            <fieldset>
+                <legend class="small">Choose Search Type</legend>
+
+                <div>
+                    <input type="radio" 
+                    id ="repositories" 
+                    name="type" 
+                    value="repositories">
+                    <label for="repositories">Repositories</label>
+                </div>
+                <div>
+                    <input type="radio" 
+                    id ="issues" 
+                    name="type" 
+                    value="issues">
+                    <label for="issues">Issues</label>
+                </div>
+                <div>
+                    <input type="radio" 
+                    id ="pullrequests" 
+                    name="type" 
+                    value="pullrequests">
+                    <label for="pullrequests">Pull Requests</label>
+                </div>
+            </fieldset>
+
+            <label for="search">
+                What code are you searching?
+            </label>
+            <input type="search" 
+            id="search" 
+            name="q" 
+            required 
+            placeholder="Enter your search term">
+
+        
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            
+        </form>
+    </div>
+</body>
+</html>
