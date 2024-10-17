@@ -81,3 +81,9 @@ How it works:
 It is the same as 'align-items' but for the whole content which may contain many items.
 
 
+GIT:
+    cd C:\Users\Mike\SoftUni\VSCode_HTML_CSS
+    git status
+    git add .
+    git commit -m "Added new exercises and updated some HTML/CSS"
+    git push origin main
