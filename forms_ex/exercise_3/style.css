@@ -1,0 +1,74 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+}
+
+.checkbox-buttons {
+    max-width: 40%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid rgb(159, 159, 159);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Hide the checkbox input */
+.Toggle input[type="checkbox"] {
+    display: none;
+}
+
+/* Style for label and the sliding bubble */
+.Toggle label {
+    position: relative;
+    display: block;
+    line-height: 3rem;
+    padding-left: 5rem;
+    cursor: pointer;
+}
+
+.Toggle label::before,
+.Toggle label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+/* Background track (before) */
+.Toggle label::before {
+    left: 0;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background: orange; /* Orange when unchecked */
+}
+
+/* Change background to gray when checked */
+.Toggle input[type="checkbox"]:checked + label::before {
+    background: #eee; /* Gray when checked */
+}
+
+/* Bubble slider (after) */
+.Toggle label::after {
+    left: 0.25rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background: rgb(200, 130, 0);
+    border: 0.1rem solid #fff;
+}
+
+/* Move bubble to the right when checked */
+.Toggle input[type="checkbox"]:checked + label::after {
+    transform: translate(125%, -50%);
+}

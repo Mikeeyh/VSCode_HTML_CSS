@@ -14,13 +14,11 @@ a {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    background-color: silver;
+    background: silver;
 }
-
 .position-relative {
     position: relative;
 }
-
 .form-container {
     position: relative;
     background: #000;
@@ -30,62 +28,63 @@ body {
     max-width: 300px;
     border-radius: 50px;
 }
-
-.fa-github {
+.form-container.youtube,
+.youtube button[type=submit] {
+    background: rgb(202, 28, 28);
+}
+.form-container.google,
+.google button[type=submit] {
+    background: rgb(48, 25, 223);
+}
+.fa-github,
+.fa-youtube,
+.fa-google {
     position: absolute;
-    top: 30px;
+    top: 10px;
     right: 30px;
     font-size: 50px;
 }
-
 .form-container > form {
     max-width: 70%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 label[for=search] {
     font-size: 20px;
     font-weight: 900;
 }
-
 input[type=search] {
-    background-color: silver;
+    background: silver;
     border: 0;
     padding: 10px 13px;
     border-radius: 20px;
     color: #FFF;
     font-size: 10px;
 }
-
 input[type=search]:focus {
     outline: 0;
-    background-color: gray;
+    background: grey;
 }
-
 input[type=search]::placeholder {
     color: #FFF;
 }
-
 button[type=submit] {
     position: absolute;
     bottom: 1px;
     right: 2px;
     border: 0;
-    background-color: #000;
+    background: #000;
     color: #FFF;
     font-size: 20px;
     padding: 3px 5px;
     border-radius: 50%;
     cursor: pointer;
 }
-
 button[type=submit]:hover {
-    background-color: gray;;
+    background: grey;
     color: #000;
 }
-
 fieldset {
     border: 0;
     display: flex;
@@ -93,7 +92,6 @@ fieldset {
     flex-wrap: wrap;
     font-size: 10px;
 }
-
 legend {
     font-size: 10px;
 }
